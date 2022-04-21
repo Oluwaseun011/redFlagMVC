@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redFlag</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="~/css/landing.css" rel="stylesheet">
+    <link rel="shortcut icon" href="~/img/emg.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/564d5e01b0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="master">
+
+        <div class="phone-head">
+            <img src="~/img/phone.JPG" />
+        </div>
+
+        <div class="container">
+
+            <div class="up">
+                <div class="up-one">
+                    <img class="log-img" src="~/UserImage/@User.FindFirst("Image").Value" />
+                    <h4 class="wel">welcome</h4>
+                    <p>@User.Identity.Name</p>
+                </div>
+                <div class="search">
+                    <div>
+                        <input type="text" name="Search" id="Search" placeholder="Search">
+                    </div>
+                    <div class="srch">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle">
+                <h5>Emergency tips...</h5>
+            </div>
+
+            <div class="render">
+                <main role="main">
+                    @RenderBody()
+                </main>
+            </div>
+
+            <div class="base">
+                <ul>
+                    <li><i class="fa-solid fa-house-chimney"></i></li>
+                    <li><i class="fa-solid fa-location-dot"></i></li>
+                    <li><i class="fa-solid fa-circle-chevron-left"></i></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="phone-down">
+            <ul>
+                <li><i class="fa-solid fa-bars"></i></li>
+                <li><i class="fa-solid fa-square"></i></li>
+                <li><i class="fa-solid fa-angle-left"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dashboard pop-menu">
+        <div class="my-profile">
+            <img src="~/UserImage/@User.FindFirst("Image").Value" />
+            <h4>@User.Identity.Name</h4>
+            <p>5 Agencies 63 Staffs </p>
+
+        </div>
+
+        <div class="menus">
+
+            <a href="#about" class="move-down">Profile</a>
+
+            <div class="move-down">
+                <button class="dropdown-btn">
+                    Emergency Mgt.
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a asp-controller="Report" asp-action="ListAll">Manage Emergencies</a>
+                </div>
+            </div>
+
+            <div class="move-down">
+                <button class="dropdown-btn">
+                    Agency Mgt.
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a asp-controller="Agency" asp-action="Create">Create Agency</a>
+                    <a asp-controller="Agency" asp-action="ListAll">Manage Agencies</a>
+                    <a asp-controller="Branch" asp-action="Get">Manage Branches</a>
+                </div>
+            </div>
+
+            <div class="move-down">
+                <button class="dropdown-btn">
+                    User Mgt.
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a asp-controller="Role" asp-action="Create">Create Role</a>
+                    <a asp-controller="Role" asp-action="ListAll">Manage Roles</a>
+                </div>
+            </div>
+
+            <a href="#about" class="move-down">Chat Room</a>
+
+            <div class="move-down">
+                <button class="dropdown-btn">
+                    Staff Mgt.
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a asp-controller="Staff" asp-action="Create">Create Staff</a>
+                    <a asp-controller="Staff" asp-action="ListAll">Manage Staffs</a>
+                </div>
+            </div>
+
+            <a asp-controller="User" asp-action="Logout" class="move-down">Logout</a>
+
+        </div>
+    </div>
+
+
+    <script src="~/js/landing.js"></script>
+
+
+</body>
+
+</html>

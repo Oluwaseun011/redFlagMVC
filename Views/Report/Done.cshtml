@@ -1,0 +1,25 @@
+﻿@model redFlag.Dtos.ReportDto
+@{ Layout = "~/Views/Shared/_SuperLanding.cshtml";
+    ViewData["Title"] = "Enroute"; }
+
+
+<section>
+
+    <section>
+
+        <div>
+            <div id="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1081.0593294980617!2d3.4055696366233925!3d7.1862012488708995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a49e9bc78aa8d%3A0x4173cb5f4da50dc8!2sJ-13%20Drycleaner%20and%20Automobile%20Car%20Wash!5e0!3m2!1sen!2sng!4v1650188903070!5m2!1sen!2sng" width="295" height="310" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <a asp-action="Done" asp-route-id="@Model.Id" asp-controller="Report">Arrived</a>
+    </div>
+
+
+</section>
+
+
+

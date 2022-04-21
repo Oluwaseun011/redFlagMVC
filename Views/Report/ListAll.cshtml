@@ -1,0 +1,47 @@
+﻿@model IEnumerable<redFlag.Dtos.ReportDto>
+@{ Layout = "~/Views/Shared/_InitiatorLanding.cshtml";
+    ViewData["Title"] = "Create Agency"; }
+
+
+<section>
+
+    <table style="font-size:small">
+        <thead>
+            <tr>
+                <th>INITIATOR</th>
+                <th>TYPE</th>
+                <th>DESCRIPTON</th>
+                <th>STATUS</th>
+            </tr>
+        </thead>
+        <tbody class="tbl">
+            @foreach (var report in Model)
+            {
+            <tr class="rows">
+
+                <td>
+                    @report.InitiatorName
+                </td>
+                <td>
+                    @report.DisasterType
+                </td>
+                <td>
+                    @report.Description
+                </td>
+                <td>
+                    @report.ReportStatus
+                </td>
+                <td>
+                    <a asp-controller="Report" asp-route-id="@report.Id" asp-action="Details">Details</a>
+                </td>
+            </tr>
+            }
+
+        </tbody>
+
+
+    </table>
+
+</section>
+
+

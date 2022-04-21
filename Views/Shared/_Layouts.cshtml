@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redFlag</title>
+    <link rel="stylesheet" href="~/css/layouts.css">
+    <link rel="shortcut icon" href="images/emg.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/564d5e01b0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="master">
+        <div class="phone-head">
+            <img src="~/img/phone.JPG" />
+        </div>
+
+        <div class="container">
+
+            <div class="up">
+                <div class="redflag-logo">
+                    <img src="~/img/emg.jpg" alt="">
+                </div>
+                <div class="redflag-name">
+                    <h1>redFlag</h1>
+                </div>
+            </div>
+
+            <div class="middle">
+                <p>
+                    To be patient in an emergency is a terrible trial
+                </p>
+            </div>
+
+            <div class="render">
+                <main role="main">
+                    @RenderBody()
+                </main>
+            </div>
+
+            <div class="base">
+                <ul>
+                    <li><i class="fa-solid fa-house-chimney"></i></li>
+                    <li><i class="fa-solid fa-location-dot"></i></li>
+                    <li><i class="fa-solid fa-location-dot"></i></li>
+                    <li><i class="fa-solid fa-circle-chevron-left"></i></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="phone-down">
+            <ul>
+                <li><i class="fa-solid fa-bars"></i></li>
+                <li><i class="fa-solid fa-square"></i></li>
+                <li><i class="fa-solid fa-angle-left"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    @*<script>
+            swal({
+                title: "OK!",
+                text: "Created",
+                icon: "success",
+                button: "ok",
+            });
+        </script>*@
+</body>
+
+</html>

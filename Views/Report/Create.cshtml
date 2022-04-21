@@ -1,0 +1,84 @@
+﻿@using redFlag.Enums
+@model redFlag.Dtos.CreateReportRequestModel
+@{ Layout = "~/Views/Shared/_InitiatorLanding.cshtml";
+    ViewData["Title"] = "Create Agency"; }
+
+
+<section>
+
+    <form asp-action="Create" method="post" class="login-form" enctype="multipart/form-data">
+        <div class="login-input">
+
+
+            <div class="inp">
+                <select asp-for="DisasterType" asp-items="@Html.GetEnumSelectList(typeof(DisasterType))" class="input-size"></select>
+            </div>
+            <div class="inp">
+                <input type="text" name="Latitude" id="Latitude" class="input-size" hidden>
+            </div>
+            <div class="inp">
+                <input type="text" name="Longitude" id="Longitude" class="input-size" hidden>
+            </div>
+
+            <div class="inp">
+                <input type="text" name="Description" id="Description" placeholder="Description" class="input-size">
+            </div>
+            <div class="inps">
+                <div class="a">
+                    <input type="file" name="Image" id="Image" class="input-size2">
+                </div>
+                <div class="b">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+            </div>
+
+            <div class="inps">
+                <div class="a">
+                    <input type="file" name="VoiceNote" id="VoiceNote" class="input-size2">
+                </div>
+                <div class="b">
+                    <i class="fa-solid fa-microphone-lines"></i>
+                </div>
+            </div>
+
+            <div class="inps">
+                <div class="a">
+                    <input type="file" name="ShortVideo" id="ShortVideo" class="input-size2">
+                </div>
+                <div class="b">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+            </div>
+
+            <div>
+                <input type="submit" value="Create" id="form-submit">
+            </div>
+        </div>
+    </form>
+
+</section>
+
+<script>
+    var x = document.getElementById("Latitude");
+    var y = document.getElementById("Longitude");
+
+    window.onload = function () {
+        getLocation();
+    };
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        x.value = position.coords.latitude - 0.7;
+        y.value = position.coords.longitude;
+    }
+</script>
+
+
+

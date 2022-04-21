@@ -1,0 +1,47 @@
+﻿@using redFlag.Enums
+
+@model redFlag.Dtos.CreateAgencyRequestModel
+
+@{ Layout = "~/Views/Shared/_SuperLanding.cshtml";
+    ViewData["Title"] = "Create Agency"; }
+
+
+@*<div class="menus">
+    <ul>
+        <li><i class="fa-solid fa-house-chimney">Profile</i></li>
+        <li><i class="fa-solid fa-location-dot">asd</i></li>
+        <li><i class="fa-solid fa-circle-chevron-left"></i></li>
+    </ul>
+</div>*@
+
+
+<section>
+
+    <h5>CREATE AGENCY</h5>
+
+    <form asp-action="Create" method="post" class="forms" enctype="multipart/form-data">
+        <div class="inputs">
+            <div class="inp">
+                <input type="text" name="Name" id="Name" placeholder="Agency Name" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="text" name="Abbreviation" id="Abbreviation" placeholder="Abbreviation" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="text" name="Description" id="Description" placeholder="Description" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="file" name="Logo" id="Logo" placeholder="Logo" class="input-size">
+            </div>
+            <div class="inp">
+                <select asp-for="DisasterType" asp-items="@Html.GetEnumSelectList(typeof(DisasterType))" class="input-size"></select>
+            </div>
+            <div>
+                <input type="submit" value="Create" id="form-submit">
+            </div>
+        </div>
+    </form>
+
+</section>
+
+

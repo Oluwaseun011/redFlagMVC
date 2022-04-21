@@ -1,0 +1,35 @@
+﻿@model IEnumerable<redFlag.Dtos.AgencyDto>
+@{ Layout = "~/Views/Shared/_SuperLanding.cshtml";
+    ViewData["Title"] = "Create Agency"; }
+
+
+<section>
+
+    <table>
+        <thead>
+            <tr>
+                <th>LOGO</th>
+                <th>NAME</th>
+            </tr>
+        </thead>
+        <tbody class="tbl">
+            @foreach (var agency in Model)
+            {
+                <tr class="rows">
+                    <td>
+                        <a  asp-controller="Agency" asp-route-id="@agency.Id" asp-action="Details"><img src="~/AgencyLogo/@agency.Logo" /></a> 
+                    </td>
+                    <td>
+                        @agency.Name
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+        
+        
+    </table>
+
+</section>
+
+

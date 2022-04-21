@@ -1,0 +1,43 @@
+﻿@model redFlag.Dtos.CreateInitiatorRequestModel
+@{ Layout = "~/Views/Shared/_Layouts.cshtml";
+    ViewData["Title"] = "Initiator Register"; }
+
+<section>
+
+    <h5>REGISTER</h5>
+
+    <form asp-action="Register" method="post" class="forms" enctype="multipart/form-data">
+        <div class="inputs">
+            <div class="inp">
+                <input type="text" name="FirstName" id="firstName" placeholder="First Name" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="text" name="LastName" id="lastName" placeholder="Last Name" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="email" name="Email" id="email" placeholder="Email adress" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="password" name="Password" id="password" placeholder="Password" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="password" name="ConfirmPassword" id="confirmPassword" placeholder="Confirm Password" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="text" name="Address" id="address" placeholder="Address" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="text" name="PhoneNumber" id="phoneNumber" placeholder="Phone Number" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="file" name="Image" id="Image" class="input-size">
+            </div>
+            <div>
+                <input type="submit" value="Register" id="form-submit">
+            </div>
+        </div>
+    </form>
+
+</section>
+
+

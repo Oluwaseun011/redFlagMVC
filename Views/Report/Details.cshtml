@@ -1,0 +1,27 @@
+﻿@model redFlag.Dtos.ReportDto
+@{ Layout = "~/Views/Shared/_InitiatorLanding.cshtml";
+    ViewData["Title"] = "Create Agency"; }
+
+
+<section style="font-size:small">
+
+    <div>
+        <img src="~/Image/@Model.Image" width="75" height="75", />
+    </div>
+    <div>
+        <video width="150" height="150" controls>
+            <source src="~/shortvid/@Model.ShortVideo" type="video/mp4">
+        </video>
+    </div>
+    <div>
+        <audio controls>
+            <source src="~/VoiceNote/@Model.VoiceNote" type="audio/mpeg">
+        </audio>
+    </div>
+    <div>
+        <a asp-action="Enroute" asp-route-id="@Model.Id" asp-controller="Report">Enroute</a>
+    </div>
+
+</section>
+
+

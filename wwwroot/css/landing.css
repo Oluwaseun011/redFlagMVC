@@ -1,0 +1,406 @@
+﻿* {
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/asdf.jpg");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    padding-top: 100px;
+    align-content: center;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+}
+
+.master {
+    background-color: darkslategrey;
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    max-width: 360px;
+    max-height: 804px;
+    border-radius: 25px;
+}
+
+.phone-head {
+    flex: 0 0 10%;
+}
+
+    .phone-head img {
+        width: 100%;
+        height: 87px;
+        border-radius: 0px;
+        border-start-end-radius: 28px;
+        border-start-start-radius: 28px;
+        
+    }
+
+.container {
+    background-image: url("../img/back.jpg");
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+
+.up {
+    flex: 0 0 17%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(25 73 111);
+    color: burlywood;
+}
+
+.up-one {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.redflag-logo {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.redflag-name {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    color: rgb(163, 44, 44);
+    font-size: 12px;
+}
+
+.middle {
+    flex: 0 0 7%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-align: left;
+    padding: 19px;
+    color: rgb(22, 26, 26);
+    background-color: antiquewhite;
+}
+
+.redflag-logo {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.redflag-name {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.render {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.maps {
+    width: 100%;
+    height: 300px;
+    border: 1px dotted red;
+    margin-bottom: 15px;
+}
+
+.forms {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-bottom: 60px;
+}
+
+.inps{
+    display: flex;
+}
+
+.a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 8px;
+}
+
+.b {
+    flex: 0 0 15%;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.inputs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.input-size {
+    width: 99%;
+    height: 35px;
+    border-radius: 18px;
+    margin-top: 10px;
+    background-color: rgb(194 226 243);
+    padding-left: 35px;
+    font-size: medium;
+}
+
+.input-size2 {
+    width: 98%;
+    height: 35px;
+    border-radius: 18px;
+    margin-top: 10px;
+    background-color: rgb(194 226 243);
+    padding-left: 35px;
+    font-size: medium;
+}
+
+#form-submit {
+    background-color: rgb(125 173 201);
+    width: 99%;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: large;
+}
+
+img {
+    height: 70px;
+    width: 70px;
+}
+
+.base {
+    flex: 0 0 8%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+    .base ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1;
+        padding: 10px;
+    }
+
+    .base li {
+        color: rgb(75, 126, 238);
+        font-size: 30px;
+    }
+
+
+.phone-down {
+    flex: 0 0 7%;
+    background-color: rgb(64, 158, 255);
+    border-radius: 25px;
+    border-start-start-radius: unset;
+    border-start-end-radius: unset;
+}
+
+    .phone-down ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1;
+        padding: 10px;
+    }
+
+    .phone-down li {
+        color: khaki;
+        font-size: 18px;
+    }
+
+
+.wel {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.move-down {
+    margin-bottom: 25px;
+}
+
+
+
+.log-img {
+    height: 30px;
+    width: 30px;
+    border-radius: 14px;
+}
+
+.pop-menu {
+    display: none;
+}
+
+
+.dashboard {
+    position: absolute;
+    width: 270px;
+    height: 645px;
+    background-color: white;
+    left: 870px;
+    top: 195px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+    .dashboard ul {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        flex: 1;
+    }
+
+    .dashboard li {
+        margin: 12px;
+    }
+
+.my-profile {
+    flex: 0 0 25%;
+    padding: 10px;
+}
+
+    .my-profile img {
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+
+
+
+.menus {
+    flex: 1;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+    .menus a, .dropdown-btn {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+    }
+
+        /* On mouse-over */
+        .menus a:hover, .dropdown-btn:hover {
+            color: black;
+        }
+
+
+
+
+.search {
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    padding-left: 25px;
+    padding-top: 5px;
+    display: flex;
+    align-content: space-between;
+}
+
+#Search {
+    height: 29px;
+    width: 220px;
+    background-color: whitesmoke;
+    font-size: 15px;
+}
+
+.srch {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.pop-menu{
+    display: none
+}
+
+.emergency {
+    height: 80px;
+    display: flex;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    border: 1px dotted red;
+}
+
+#report-emg{
+    text-align:center;
+    text-decoration:none;
+}
+
+
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+}
+
+
+
+
+/* Style the sidenav links and the dropdown button */
+
+
+/* Main content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 10px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: rgb(25 73 111);
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: azure;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}

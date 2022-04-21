@@ -1,0 +1,37 @@
+﻿
+@model redFlag.Dtos.CreateBranchRequestModel
+@{ Layout = "~/Views/Shared/_Layouts.cshtml";
+    ViewData["Title"] = "Create Agency"; }
+
+
+<section>
+
+    <form asp-action="Create" method="post" class="forms" enctype="multipart/form-data">
+        <div class="inputs">
+            <div class="inp">
+                <input type="text" name="Name" id="Name" placeholder="Branch Name" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="text" name="Address" id="Address" placeholder="Address" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="email" name="Email" id="Email" placeholder="Email Address" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="text" name="PhoneNumber" id="PhoneNumber" placeholder="Phone Number" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="text" name="Latitude" id="Latitude" placeholder="Latitude" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="text" name="Longitude" id="Longitude" placeholder="Longitude" class="input-size">
+            </div>
+            <div>
+                <input type="submit" value="Create" id="form-submit">
+            </div>
+        </div>
+    </form>
+
+</section>
+
+

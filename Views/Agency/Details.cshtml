@@ -1,0 +1,26 @@
+﻿@model redFlag.Dtos.AgencyDto
+@{ Layout = "~/Views/Shared/_SuperLanding.cshtml";
+    ViewData["Title"] = "Create Agency"; }
+
+
+<section>
+
+    <div>
+        <img src="~/AgencyLogo/@Model.Logo" />
+    </div>
+    <div>
+        @Model.Name
+    </div>
+    <div>
+        @Model.RegistrationNumber
+    </div>
+    <div>
+        @Model.Abbreviation
+    </div>
+    <div>
+        <a asp-action="CreateHead" asp-route-id="@Model.Id" asp-controller="Branch">Create @Model.Abbreviation Headquaters and Admin</a>
+    </div>
+   
+</section>
+
+

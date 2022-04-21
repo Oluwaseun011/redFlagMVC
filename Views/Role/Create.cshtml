@@ -1,0 +1,25 @@
+﻿
+@model redFlag.Dtos.CreateRoleRequestModel
+@{ Layout = "~/Views/Shared/_SuperLanding.cshtml";
+    ViewData["Title"] = "Create Agency"; }
+
+
+<section>
+
+    <form asp-action="Create" method="post" class="login-form" enctype="multipart/form-data">
+        <div class="login-input">
+            <div class="inp">
+                <input type="text" name="Name" id="Name" placeholder="Role Name" class="input-size">
+            </div>
+            <div class="inp">
+                <input type="text" name="Description" id="Description" placeholder="Description" class="input-size">
+            </div>
+            <div>
+                <input type="submit" value="Create" id="form-submit">
+            </div>
+        </div>
+    </form>
+
+</section>
+
+
